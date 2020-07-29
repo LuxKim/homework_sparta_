@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>초코파이 팝니다</title>
+    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@200&family=Nanum+Myeongjo:wght@700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <style>
+        .wrap {
+            width: 1000px;
+            margin: 20px auto 40px auto;
+            font-family: 'Nanum Myeongjo', serif;
+            border: black solid;
+            border-radius: 5px;
+            border-width: 1px;
+        }
+
+
+        .titleImage {
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .card {
+            width: 1000px;
+            /*text-align: center;*/
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .order {
+            width: 570px;
+            text-align: center;
+            margin: 20px auto 40px auto;
+        }
+    </style>
+    <script>
+        function order() {
+            alert("지금은 주문할 수 없습니다!")
+        }
+    </script>
+</head>
+<body>
+<div class="wrap">
+    <div class="titleImage">
+        <img src="https://dimg.donga.com/wps/NEWS/IMAGE/2019/04/01/94831052.2.jpg">
+    </div>
+    <!--    <div class="titleText">-->
+    <!--        <h2>초코파이 팝니다</h2>-->
+    <!--        <h5>가격 : 410원</h5>-->
+    <!--        <p>사무실에 안 먹는 초코파이 있어서 싸게 팝니다</p>-->
+    <!--    </div>-->
+    <div class="card" style="width: 36rem;">
+        <div class="card-body">
+            <h5 class="card-title">초코파이 팝니다</h5>
+            <h6 class="card-subtitle mb-2 text-muted">가격 : 410원</h6>
+            <p class="card-text">사무실에 안 먹는 초코파이 있어서 싸게 팝니다</p>
+        </div>
+    </div>
+    <div class="order">
+        <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">주문자 이름</span>
+                    </div>
+                    <input type="text" class="form-control" id="order-name">
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <label class="input-group-text">수량</label>
+                    </div>
+                    <select class="custom-select" id="order-count">
+                        <option selected value=""> -- 수량을 선택하세요 --</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">주소</span>
+                    </div>
+                    <input type="text" class="form-control" id="order-address">
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">전화번호</span>
+                    </div>
+                    <input type="text" class="form-control" id="order-phone">
+                </div>
+                <div class="order">
+                    <button onclick="order()" type="button" class="btn btn-primary">주문하기</button>
+                </div>
+    </div>
+</div>
+</body>
+</html>
